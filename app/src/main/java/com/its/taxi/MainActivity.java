@@ -3,6 +3,8 @@ package com.its.taxi;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Notification;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.support.v4.app.NotificationCompat;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -148,7 +150,14 @@ public class MainActivity extends Activity implements ClockUpdateListener, Batte
 
         if (item.getItemId() == R.id.about) {
             AlertDialog.Builder aboutDialogBuilder = new AlertDialog.Builder(this);
-            aboutDialogBuilder.setMessage("Версия 2.0");
+            String version;
+            try {
+                PackageInfo info = getPackageManager().getPackageInfo(getPackageName(), 0);
+                 version = "Текущая версия: " + info.versionName + "\n" + "Контроль: " + info.versionCode;
+            } catch (PackageManager.NameNotFoundException e) {
+                version = "Информация о версии приложения недоступна";
+            }
+            aboutDialogBuilder.setMessage(version);
             aboutDialogBuilder.setNeutralButton(getText(R.string.main_activity_dialog_close), new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
