@@ -9,7 +9,7 @@ android {
         applicationId "com.egslava.taxi"
         minSdkVersion 10
         targetSdkVersion 10
-        versionCode 1
+        versionCode 1597293574
         versionName "1.18.2"
     }
     buildTypes {
