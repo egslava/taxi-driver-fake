@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="main_preferencescreen"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:example="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/str_1_title">
+        <CheckBoxPreference android:title="@string/str_1_title" android:key="unlim" android:summary="@string/str_1_summary" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/cat_2_title">
+        <CheckBoxPreference android:title="@string/cat_2_pos_1_title" android:key="tip" android:summary="@string/cat_2_pos_1_summary" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/cat_2_pos_2_title" android:key="taxo_show" android:summary="@string/cat_2_pos_2_summary" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="GPS">
+        <CheckBoxPreference android:title="GPS" android:key="coarse" android:summary="@string/cat_3_pos_1_summary" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/cat_3_pos_2_title" android:key="gps_auto_location" android:summary="@string/cat_3_pos_2_summary" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/cat_4_title">
+        <CheckBoxPreference android:title="@string/cat_4_pos_1_title" android:key="confirm_set_ira" android:summary="@string/cat_4_pos_1_summary" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/cat_5_title">
+        <com.its.lib.seekbarpreference.SeekBarPreference android:title="@string/dialog_title" android:key="yellow_update_period" android:summary="@string/summary" android:defaultValue="30" android:dialogTitle="@string/dialog_title" example:minValue="10" example:maxValue="50" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/cat_6_title">
+        <com.its.lib.seekbarpreference.SeekBarPreference android:title="@string/dialog_title_colunms" android:key="num_colunms" android:summary="@string/summary_colunms" android:defaultValue="0" android:dialogTitle="@string/dialog_title_colunms" example:minValue="0" example:maxValue="6" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/cat_7_title">
+        <com.its.lib.seekbarpreference.SeekBarPreference android:title="@string/cat_7_pos_1_title" android:key="top_panel_grow" android:summary="@string/cat_7_pos_1_summary" android:defaultValue="100" android:dialogTitle="@string/cat_7_pos_1_title" example:minValue="100" example:maxValue="500" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/cat_sound_title">
+        <CheckBoxPreference android:title="@string/cat_sound_pos_1_title" android:key="default_sound" android:summary="@string/cat_sound_pos_1_summary" android:defaultValue="true" android:disableDependentsState="true" />
+        <RingtonePreference android:title="@string/str_8_title" android:key="ringtonePref" android:summary="@string/str_8_summary" android:dependency="default_sound" />
+        <com.its.lib.seekbarpreference.SeekBarPreference android:title="@string/cat_sound_pos_3_title" android:key="sound_volume" android:summary="@string/cat_sound_pos_3_summary" android:defaultValue="100" android:dialogTitle="@string/cat_sound_pos_3_title" example:minValue="10" example:maxValue="100" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/cat_sound_not_title">
+        <RingtonePreference android:title="@string/str_8_title" android:key="sound_on_background_notification" android:summary="@string/str_8_summary" android:defaultValue="content://settings/system/notification_sound" android:ringtoneType="notification" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/cat_9_title">
+        <CheckBoxPreference android:title="@string/cat_9_title" android:key="autoconnect" android:summary="@string/cat_9_pos_1_summary" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/cat_10_title">
+        <CheckBoxPreference android:title="@string/cat_10_pos_1_title" android:key="is_need_yn_confirm_order" android:summary="@string/cat_10_pos_1_summary" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/cat_11_title">
+        <CheckBoxPreference android:title="@string/cat_11_pos_1_title" android:key="is_need_route" android:summary="@string/cat_11_pos_1_summary" android:defaultValue="true" />
+        <com.its.lib.seekbarpreference.SeekBarPreference android:title="@string/cat_11_pos_2_title" android:key="route_update" android:summary="@string/cat_11_pos_2_summary" android:defaultValue="30" android:dialogTitle="@string/cat_11_pos_2_title" example:minValue="10" example:maxValue="120" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/cat_12_title">
+        <CheckBoxPreference android:title="@string/cat_12_pos_1_title" android:key="is_need_colorate_messages" android:summary="@string/cat_12_pos_1_summary" android:defaultValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

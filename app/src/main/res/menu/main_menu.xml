@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/statistics"
+        android:icon="@drawable/mm_menu_t_stat"
+        android:title="@string/main_activity_menu_taxo_stat" />
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/mm_menu_settings"
+        android:title="@string/main_activity_menu_options" />
+
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/mm_menu_about"
+        android:title="@string/main_activity_menu_about" />
+
+    <item
+        android:id="@+id/exit"
+        android:icon="@drawable/mm_menu_exit"
+        android:title="@string/main_menu_exit" />
+</menu>

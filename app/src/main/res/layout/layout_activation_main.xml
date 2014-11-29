@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_color"
+    android:orientation="vertical"
+    android:padding="@dimen/std_padding">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/screen_activation_user"
+        android:textSize="@dimen/text_size_large" />
+
+    <EditText
+        android:id="@+id/editUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/screen_activation_pass"
+        android:textSize="@dimen/text_size_large" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/quarter_padding">
+
+        <Button
+            android:id="@+id/btn_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/quarter_padding"
+            android:text="@string/screen_activation_choice"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/textCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btn_city"
+            android:background="#ff090909"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/quarter_padding"
+            android:text="@string/screen_activation_city"
+            android:textColor="@color/red_color"
+            android:textSize="@dimen/text_size_large" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_activation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/screen_activation_activation" />
+</LinearLayout>

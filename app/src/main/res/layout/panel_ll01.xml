@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridView
+        android:id="@+id/GridView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="@dimen/column_width"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/grid_spacing"
+        android:numColumns="auto_fit"
+        android:padding="@dimen/grid_spacing"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/grid_spacing" />
+
+    <LinearLayout
+        android:id="@+id/panel_waiting_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/dark_gray_color"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:padding="@dimen/std_padding"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/main_activity_waiting_timer_title"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_extra_large" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/main_activity_waiting_timer_hint"
+            android:textColor="@color/light_gray_color"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/text_waiting_timer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/half_padding"
+            android:gravity="center"
+            android:text="1:23:45"
+            android:textColor="@color/red_color"
+            android:textSize="@dimen/text_size_huge"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/panel_to_client_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/dark_gray_color"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:padding="@dimen/std_padding"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/main_activity_to_client_timer_title"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_extra_large" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/main_activity_to_client_timer_hint"
+            android:textColor="@color/dark_gray_color"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/text_to_client_timer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/half_padding"
+            android:gravity="center"
+            android:text="1:23:45"
+            android:textColor="@color/red_color"
+            android:textSize="@dimen/text_size_huge"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

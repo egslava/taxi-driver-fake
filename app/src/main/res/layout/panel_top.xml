@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/panelTop"
+    android:background="@color/black_color"
+    android:padding="@dimen/quarter_padding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_connection_status"
+        android:padding="@dimen/quarter_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold"
+                android:textColor="@color/yellow_color"
+                android:id="@+id/text_driver_id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="-----" />
+
+            <TextView
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold"
+                android:textColor="@color/pink_color"
+                android:gravity="center_horizontal"
+                android:id="@+id/text_driver_state"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="не активировано" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/quarter_padding">
+
+            <TextView
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold"
+                android:textColor="@color/red_color"
+                android:id="@+id/text_date_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="03.03.11 19:01:20" />
+
+            <TextView
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold"
+                android:textColor="@color/green_color"
+                android:gravity="right"
+                android:id="@+id/text_battery_state"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A100%" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
